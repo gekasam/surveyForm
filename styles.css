@@ -48,6 +48,9 @@ h1 {
   height: 2.375rem;
   font-size: 15px;
 }
+input {
+  margin: 0;
+}
 .input-radio, .input-checkbox {
     display: inline-block;
     margin: 0.2rem 0.6rem 0.2rem 0.2rem;
