@@ -21,7 +21,7 @@ body::before {
 }
 body {
   color: rgb(230, 230, 245);
-  font-size: 18;
+  font-size: 18px;
   }
 .container {
   max-width: 720px;
