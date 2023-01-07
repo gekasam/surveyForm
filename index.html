@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <title>WhatIsTeaForYou</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Tea In Your Life</h1>
+        <p id="description">In every person's life, tea is a thing perceived differently. This survey will help to create statistics about what tea is for Code Campers</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text"
+          class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">E-mail</label>
+          <input id="email" type="email" class="form-control" placeholder="Enter you email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Years</label>
+          <input id="number" type="number" class="form-control" min="0" max="120" placeholder="How many years you drinking tea" required>
+        </div>
+        <div class="form-group">
+          <p>You favorite type of tea is <i>(pay attention! classification chinese)</i>:</p>
+          <select id="dropdown" name="favoriteTea" class="form-control">
+            <option disabled selected value>Сhoose the favorite type of tea</option>
+            <option value="Black tea/Pu'er">
+             Black tea/Pu'er</option>
+            <option value="Raw Pu'er">Raw Pu'er</option>
+            <option value="Red Tea">Red Tea</option>
+            <option value="Oolong">Oolong</option>
+            <option value="Green Tea">Green Tea</option>
+            <option value="White Tea">White Tea</option>
+            <option value="Yellow Tea">Yellow Tea</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Have you ever produced tea</p>
+          <label for="produced"><input id="produced" name="teaProduction" type="radio" value="produced" class="input-radio" checked> Produced</label>
+          <label for="notProduced"><input id="notProduced" name="teaProduction" type="radio" value="notProduced" class="input-radio">Not produced</label>        
+        </div>
+        <div class="form-group">
+          <p>What type of tea making do you use?</p>
+          <label for="European"><input id="European" type="checkbox" class="input-checkbox" value="european">European</label>
+          <label for="Chineese"><input id="Chineese" type="checkbox" class="input-checkbox" value="chineese">Chineese</label>
+          <label for="Indian"><input id="Indian" type="checkbox" class="input-checkbox" value="indian">Indian</label>
+          <label for="Japanese"><input id="Japanese" type="checkbox" class="input-checkbox" value="japaneese">Japanese</label>
+          <label for="Other"><input id="Other" type="checkbox" class="input-checkbox" value="other">Other (please specify in the comments box)</label>
+        </div>
+        <div class="form-group">
+          <p>Here you can write what you think is important in your interaction with tea  by yourself. <i>You also need to specify the type of tea making here if you have selected the "other" item</i></p>
+          <textarea rows="8" placeholder="My acquaintance with tea has begun..." required></textarea>
+        </div>
+        <div class="form-group">        
+          <input id="submit" type="submit" class="submit-button">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

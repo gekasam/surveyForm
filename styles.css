@@ -1,0 +1,86 @@
+header {
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20;
+  margin: 1.8rem auto 0 auto;
+  width:85%;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient( 115deg, rgba(60, 58, 97, 0.604), rgba(22, 8, 2, 0.638) ), url(https://vsegda-pomnim.com/uploads/posts/2022-04/1650609460_3-vsegda-pomnim-com-p-kak-tsvetet-chai-foto-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body {
+  color: rgb(230, 230, 245);
+  font-size: 18;
+  }
+.container {
+  max-width: 720px;
+  margin: 3.125rem auto 0 auto;
+}
+form {
+  padding: 0.5rem 1rem 0.1 0.2rem;
+  margin: 1.8rem auto 0 auto;
+  width:85%;
+  background-color: rgba(4, 45, 49, 0.743);
+  box-shadow: 0 0 2px 2px rgb(4, 45, 49);
+}
+
+h1 {
+  text-align: center;
+}
+.form-control {
+  display: inline-block;
+  margin: 0.3rem auto 0.4rem 0;
+  width: 100%;
+  height: 2.375rem;
+  font-size: 15;
+}
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin: 0.2rem 0.6rem 0.2rem 0.2rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.form-group {
+  margin: 0 auto 1rem 1rem;
+}
+p {
+  margin: 1.5rem auto 0.7rem auto;
+  font-size: 20;
+}
+textarea {
+  width: 90%;
+  font-size: 15;
+  background-color: rgb(64, 84, 33);
+  color: white;
+}
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgb(42, 80, 3);
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    font-size: 15;
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.734);
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
