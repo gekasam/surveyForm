@@ -1,11 +1,16 @@
-header {
-  display: block;
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(255, 255, 255);
-  font-size: 20;
-  margin: 1.8rem auto 0 auto;
-  width:85%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+body {
+  color: rgb(230, 230, 245);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+	margin: 0;
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -19,54 +24,122 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
-body {
-  color: rgb(230, 230, 245);
-  font-size: 18px;
-  }
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+	text-align: center;
+}
+
+p {
+  margin: 1.5rem auto 0.7rem auto;
+  font-size: 1.125rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+input,
+button,
+select,
+
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
 .container {
-  max-width: 720px;
+  width: 100%;
   margin: 3.125rem auto 0 auto;
 }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  margin: 1.8rem auto 0 auto;
+  width:85%;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
 form {
-  padding: 0.5rem 2rem 0.1rem 2rem;
+	padding: 2.5rem 0.625rem;
   margin: 1.8rem auto 0 auto;
   width:85%;
   background-color: rgba(4, 45, 49, 0.743);
   box-shadow: 0 0 2px 2px rgb(4, 45, 49);
 }
 
-h1 {
-  text-align: center;
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
 }
+
+.form-group {
+  margin: 0 auto 1rem auto;
+	padding: 0.25rem;
+}
+
 .form-control {
   display: block;
-  margin: 0.3rem 0 0.4rem 0;
-  width: 100%;
-  height: 2.375rem;
+	width: 100%;
+	height: 2.375rem;
+	padding: 0.375rem 0.75rem;
   font-size: 15px;
+	background-clip: padding-box;
 }
-input {
-  margin: 0;
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
 .input-radio, .input-checkbox {
     display: inline-block;
     margin: 0.2rem 0.6rem 0.2rem 0.2rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
 }
-.form-group {
-  margin: 0 auto 1rem auto;
-}
-p {
-  margin: 1.5rem auto 0.7rem auto;
-  font-size: 20px;
-}
-textarea {
-  width: 90%;
-  font-size: 15px;
+
+.input-textarea {
+  width: 100%;
   background-color: rgb(64, 84, 33);
   color: white;
+	padding: 0.625rem;
+	resize: vertical;
 }
+
+textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.734);
+}
+
 .submit-button {
     display: block;
     width: 100%;
@@ -75,14 +148,4 @@ textarea {
     color: inherit;
     border: 0;
     cursor: pointer;
-    font-size: 15px;
-}
-
-textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.734);
-}
-label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
 }
